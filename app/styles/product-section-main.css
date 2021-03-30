@@ -1,0 +1,137 @@
+
+
+  .product-section .product{
+      border-radius: 10px;
+      z-index: 5;
+      box-shadow: 3px 5px 6px rgb(139, 138, 138);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      justify-content: space-evenly;
+  }
+
+  .product .heart{
+      cursor: pointer;
+      position: absolute;
+      right: 4%;
+      top: 3%;
+  } 
+
+  .img-active{
+      border-radius: 10px;
+      background-color: rgb(128, 126, 126);
+  }
+
+  .items{
+      height: 65%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .items img{
+      width: 130px;
+      height: 90px;
+  }
+
+  .prname{
+      margin: 1rem 0rem 0rem -1.3rem;
+      line-height: 1.4;
+      text-transform: capitalize;
+      font-weight: 600;
+  }
+
+  .prices{
+      display: flex;
+  }
+
+  .butoons{
+      width: 100%;
+      text-transform: capitalize;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .butoons .buyme{
+      text-transform: capitalize;
+      width: 4.7rem;
+      color: white;
+      border-radius: 4px;
+      background-color: rgb(20, 20, 20);
+      border:none;  
+      outline:none;
+    }
+
+  .cartbtn{
+      width: 4.7rem;
+      background-color: rgb(20, 20, 20);
+      border-radius: 4px;
+      padding: 5px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    
+  }
+
+  .cartbtn span{
+      font-size: 0.6rem;
+      color: white;
+      font-weight: 600;
+  }
+  .cartbtn img{
+      width: 15px;
+  }
+
+
+
+
+.pr1{
+    grid-area: pr1;
+     
+ }
+ 
+
+.pr2{
+   grid-area: pr2;
+   
+
+}
+
+.pr3{
+    grid-area: pr3;
+   
+    
+}
+
+.pr4{
+    grid-area: pr4;
+   
+}
+
+.pr5{
+    grid-area: pr5;
+   
+    
+}
+
+.pr6{
+    grid-area: pr6;
+   
+    
+}
+
+.pr7{
+    grid-area: pr7;
+   
+    
+}
+
+.pr8{
+     grid-area: pr8;
+    
+    
+}
+

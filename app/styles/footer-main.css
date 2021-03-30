@@ -1,0 +1,89 @@
+
+
+
+.footer h1{
+    text-align: center;
+    color: white;
+}
+
+.footer .explore{
+    z-index: 5;
+}
+
+.footer ul{
+    list-style: none;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+.connect{
+    text-align: center;
+    line-height: 2;
+    color: white;
+    
+}
+
+
+.email-button input,.email-button button{
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.email-button input::placeholder{
+    color: rgb(88, 85, 85);
+    
+}
+
+.email-button button{
+    background-color: black;
+    color: white;
+}
+
+.footer-links{
+    width: 100%;
+    height: 9rem;
+    background-color: rgb(227, 227, 231);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.payment-logo{
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-logo img,.social-links img{
+    width: 30px;
+    transition: 0.5s;
+}
+
+.payment-logo img:hover,.social-links img:hover{
+    transform: scale(1.2);
+}
+
+.copyright span{
+    color: rgb(46, 45, 45);
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+}
+
+
+
+
+
+
