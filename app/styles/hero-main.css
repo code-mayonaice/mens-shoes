@@ -1,5 +1,36 @@
 
-   
+   .slogan{
+     
+       width: 45%;
+       height: 24rem;
+      transform: translate(8rem,7rem);
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+   }
+
+
+   .slogan h1{
+        color: rgb(255, 255, 255);
+        font-size: 5.5rem;
+        text-transform: capitalize;
+        line-height: 1.1;
+   }
+
+   .slogan button{
+         width: 8rem;
+         height: 2.5rem;
+         font-size: 1rem;
+         background-color: rgb(24, 23, 23);
+         border: 2px solid rgb(167, 166, 166);
+         color: white;
+         outline: none;
+         text-transform: capitalize;
+         font-weight: 600;
+         cursor: pointer;
+   }
+
+
     .product-slider{
         width: 35rem;
         height: 32rem;
@@ -8,26 +39,30 @@
         right: 13%;
         top: 15%;
         overflow: hidden;
-       
     } 
 
     .image-slider-holder img{
-        width: 520px;
-        z-index: 5;
+        width: 510px;
+        height: 450px;
         transition: 0.3s;
+        z-index: 10;
+        
     }
 
+
+
     .imagesliderholder-active{
-        margin-top: -45rem;
+       transition: 0.5s transform ease-in;
     }
 
     .image-slider-holder{
         width: 100%;
-        height: 140rem;
+        height: 225rem;
         display: flex;
-        flex-direction: column;
         justify-content: space-around;
+        flex-direction: column;
         align-items: center;
+       
     }
   
 
@@ -38,8 +73,7 @@
         border-radius: 50%;
         position: absolute;
         right: 16%;
-        top: 10%;
-        
+        top: 12%;
     }
 
     .slider-arrow{
@@ -50,10 +84,16 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        z-index: 10;
+        z-index: 5;
         cursor: pointer;
     }
 
     .arrow-up{
         transform: rotate(-180deg);
     }
+
+    .arrow-down{
+        display: none;
+    }
+
+    

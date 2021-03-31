@@ -43,7 +43,7 @@
       height: 86vh;
       top: 5rem;
       border-radius: 0;
-      background-image:linear-gradient(to right, rgba(14, 13, 13, 0.788),rgba(61, 60, 60, 0.342));
+      background-image:linear-gradient(to right, rgba(14, 13, 13, 0.884),rgb(48, 47, 47));
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -54,6 +54,7 @@
 
   .product-section .product:hover{
         transform: scale(1.1);
+        z-index: 5;
   }
 
   .product-section{
@@ -62,9 +63,16 @@
 
 
 
+
 }
 
-@media (min-width:1000px){
+@media (min-width:1200px){
+
+
+    .product-section .product:hover{
+        transform: scale(1.1);
+        z-index: 10;
+  }
     
     .desktop-nav-content a{
         font-size: 1rem;
@@ -90,6 +98,110 @@
     .desktop-nav-content a:hover{
         color: rgb(170, 170, 173);
     }
+
+
+     .product-section{
+        height: 85rem;
+        grid-row-gap: 3rem;
+        grid-column-gap: 7px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(14,18rem);
+        grid-template-areas: 'pr1 pr2 pr3 pr4'
+                             'pr5 pr6 pr7 pr8'
+                             'pr9 pr10 pr11 pr12'
+                             'pr13 pr14 pr15 pr16';
+                            
+    }          
+    
+    .footer{
+        height: 25rem;
+        flex-direction: row;
+        align-items: center;
+  
+    }
+
+    
+    .footer .footer-columns{
+        
+        width: 30%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .footer h1{
+        font-size: 2.3rem;
+    }
+    
+    .footer ul{
+          height: 10rem;
+    }
+ 
+    .footer a{
+       
+        font-size: 1.2rem;
+    }
+
+    .footer-columns-email{
+        
+        width: 30%;
+        height: 90%;
+    }
+
+    .footer-columns-email h1{
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .footer-columns-email p{
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+     }
+
+     .email-button{
+         display: flex;
+         justify-content: space-evenly;
+     }
+
+     .email-button input{
+        width: 15rem;
+        padding: 8px;
+        font-size: 0.9rem;
+     }
+
+     .email-button button{
+        width: 6rem;
+        height: 2rem;
+        background-color: rgb(29, 28, 28);
+        border: 2px solid rgb(192, 191, 191);
+     }
+
+     .email-button button:hover{
+         transform: scale(1.1);
+     }
+
+
+     .footer-links{
+         height: 10rem;
+     }
+
+      
+     .payment-logo img,.social-links img{
+        width: 35px;
+        
+    }
+
+    .payment-logo{
+        width: 25rem;
+    }
+
+    .payment-logo img:hover{
+        box-shadow: 3px 3px 3px rgb(61, 61, 61);
+    }
+
+
+
 
  
 }

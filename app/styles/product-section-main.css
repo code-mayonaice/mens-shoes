@@ -11,7 +11,7 @@
       height: 100%;
       justify-content: space-evenly;
       transition: 0.5s;
-      background-color: rgb(138, 118, 79);
+      background-color: rgba(73, 73, 73, 0.486);
   }
 
   .product .heart{
@@ -135,5 +135,46 @@
      grid-area: pr8;
     
     
+}
+
+.pr9{
+    grid-area: pr9;
+   
+   
+}
+.pr10{
+    grid-area: pr10;
+   
+}
+
+.pr11{
+    grid-area: pr11;
+   
+   
+}
+.pr12{
+    grid-area: pr12;
+   
+   
+}
+.pr13{
+    grid-area: pr13;
+   
+}
+
+.pr14{
+    grid-area: pr14;
+      
+}
+
+.pr15{
+    grid-area: pr15;
+    
+}
+
+
+.pr16{
+    grid-area: pr16;
+     
 }
 
