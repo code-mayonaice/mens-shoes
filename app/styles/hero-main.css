@@ -1,47 +1,59 @@
 
+   
+    .product-slider{
+        width: 35rem;
+        height: 32rem;
+        background-color: transparent;
+        position: absolute;
+        right: 13%;
+        top: 15%;
+        overflow: hidden;
+       
+    } 
 
-.hero img{
-    width: 230px;
-    transform: rotate(10deg);
-}
+    .image-slider-holder img{
+        width: 520px;
+        z-index: 5;
+        transition: 0.3s;
+    }
 
-.title{
-    height: 85%;
-    font-size: 1.1rem;
-    color: rgb(19, 18, 18);
-    text-transform: uppercase;
-    background-color: rgb(45, 88, 168);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+    .imagesliderholder-active{
+        margin-top: -45rem;
+    }
 
-.hero span{
-    position: absolute;
-    font-size: 0.9rem;
-    font-weight: 600;
-    transform: rotate(-90deg);
-    right: -8rem;
-    top: 48%;
-    text-transform: uppercase;
-    color: rgb(0, 17, 92);
-    font-family: 'Poppins', sans-serif;
-}
+    .image-slider-holder{
+        width: 100%;
+        height: 140rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+  
 
-.title h1{
-    color: rgb(192, 189, 189);
-}
+     .circle-bg{
+        background-color: rgba(12, 11, 11, 0.226);
+        width: 28rem;
+        height: 28rem;
+        border-radius: 50%;
+        position: absolute;
+        right: 16%;
+        top: 10%;
+        
+    }
 
-.title-btn{
-    margin-top: 1.8rem;
-    padding: 7px 15px;
-    border: none;
-    outline: none;
-    background-color: rgb(45, 88, 168);
-    color: rgb(26, 24, 24);
-    text-transform: capitalize;
-    font-weight: 800;
-    border-radius: 3px;
-    box-shadow: 3px 3px 4px grey;
-}
+    .slider-arrow{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .arrow-up{
+        transform: rotate(-180deg);
+    }

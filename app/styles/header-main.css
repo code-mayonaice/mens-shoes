@@ -2,6 +2,7 @@
 .logo{
     margin-left: 1.3rem;
     font-size: 0.9rem;
+    cursor: pointer;
 }
 
 .menu-img{

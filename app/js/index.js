@@ -17,3 +17,13 @@ hearts.forEach(function(heart){
            heart.classList.toggle('img-active');
      });
 });
+
+
+const arrowup = document.querySelector('.arrow-up');
+const imgslider = document.querySelector('.image-slider-holder img')
+
+ 
+arrowup.addEventListener('click',function(){
+   
+});
+

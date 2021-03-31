@@ -42,16 +42,19 @@ header{
     z-index: 10;
 }
 
+
 .hero{
-    width: 80%;
+    width: 90%;
     height: 20rem;
     margin:auto;
-    background-color: rgb(235, 234, 233);
+    background-image: url(/app/web-pictures/background/black-shoes-bg.jpg);
+    background-position: center;
+    background-size: cover;
     top: 6rem;
     position: relative;
     border-radius: 10px;
     box-shadow: 3px 5px 6px rgb(139, 138, 138);
-    
+    font-family: 'poppins', sans-serif;
 } 
 
 
