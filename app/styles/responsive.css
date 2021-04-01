@@ -17,6 +17,15 @@
       margin-right:1.8rem;
   }
 
+  .cart{
+      transition: 0.4s;
+  }
+
+  .cart:hover{
+    transform: scale(1.2);
+}
+
+
   .desktop-nav-content{
       width: 25rem;
       display: flex;
@@ -34,6 +43,12 @@
     text-transform: capitalize;
     font-size: 0.8rem;
   }
+
+  
+  .desktop-nav-content a:hover{
+    color: rgb(170, 170, 173);
+}
+
 
 
   .cart{
@@ -96,6 +111,7 @@
     width: 30px;
     transition: 0.4s;
 }
+
 .pr-logos img:hover{
     transform: scale(1.2);
 }
@@ -136,7 +152,30 @@
     top: 8%;
 }
 
+.slider-arrow img{
+    width: 40px;
+}
 
+
+.product-section{
+    height: 120rem;
+    grid-row-gap: 3rem;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,18rem);
+    grid-template-areas: 'pr1 pr2 pr3 '
+                         'pr4 pr5 pr6'
+                         'pr7 pr8 pr9'
+                         'pr10 pr11 pr12'
+                         'pr13 pr14 pr15'
+                         'pr16 pr17 pr18';
+                        
+}     
+
+
+ .product-section .product{
+       height: 18rem;
+  }
 
   .product-section .product:hover{
         transform: scale(1.1);
@@ -147,10 +186,79 @@
       margin: 10rem auto;
   }
 
+  .buyme:hover,.cartbtn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+  
+  .product-section .product:hover{
+    transform: scale(1.03);
+    z-index: 10;
+    box-shadow: 5px 6px 6px rgb(139, 138, 138);
+}
+
+.product .heart{
+    transition: 0.4s;
+} 
+
+.product .heart:hover{
+    transform: scale(1.2);
+}
+
+
+.email-button button:hover,.slogan button:hover{
+    transform: scale(1.1);
+}
+
+
 
 }
 
 
+@media (min-width:800px){
+         
+    
+.slogan{
+    height: 17rem;
+    transform: translate(6rem,2rem);
+   
+}
+
+.pr-logos{
+    width: 20rem;
+    right: 60%;
+}
+
+.pr-logos img{
+    width: 40px;
+    transition: 0.4s;
+}
+
+.product-slider{
+    width: 22rem;
+} 
+
+.circle-bg{
+    background-color: rgba(12, 11, 11, 0.226);
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 8%;
+    top: 8%;
+}
+
+
+.footer{
+    height: 25rem;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+      
+}
 
 
 
@@ -269,12 +377,9 @@
     }
 
     .product-section{
-        height: 85rem;
-        margin: 8rem auto;
-        grid-row-gap: 3rem;
-        grid-column-gap: 20px;
+        height: 100rem;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(14,18rem);
+        grid-template-rows: repeat(4,22rem);
         grid-template-areas: 'pr1 pr2 pr3 pr4'
                              'pr5 pr6 pr7 pr8'
                              'pr9 pr10 pr11 pr12'
@@ -282,14 +387,21 @@
                             
     }          
     
-
-
-    .product-section .product:hover{
-        transform: scale(1.03);
-        z-index: 10;
-        box-shadow: 5px 6px 6px rgb(139, 138, 138);
-  }
+    .pr-logos{
+        width: 23rem;
+        height: 3rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        right: 70%;
+        top: 91%;
+    }
     
+    .pr-logos img{
+        width: 50px;
+    }
+
     .desktop-nav-content a{
         font-size: 1rem;
       }
@@ -299,25 +411,14 @@
         transition: 0.3s;
     }
 
-    .cart:hover{
-        transform: scale(1.2);
-    }
-
-    .buyme:hover,.cartbtn:hover{
-        transform: scale(1.1);
-        cursor: pointer;
-    }
-
+  
+ 
     .desktop-nav{
         margin-right:2.3rem;
     }
 
     .desktop-nav-content{
         width:39rem;
-    }
-
-    .desktop-nav-content a:hover{
-        color: rgb(170, 170, 173);
     }
 
 
@@ -330,7 +431,6 @@
 
     
     .footer .footer-columns{
-        
         width: 30%;
         height: 90%;
         display: flex;
@@ -352,7 +452,6 @@
     }
 
     .footer-columns-email{
-        
         width: 30%;
         height: 90%;
     }
@@ -367,11 +466,7 @@
         margin-bottom: 3rem;
      }
 
-     .email-button{
-         display: flex;
-         justify-content: space-evenly;
-     }
-
+  
      .email-button input{
         width: 15rem;
         padding: 8px;
@@ -381,17 +476,14 @@
      .email-button button{
         width: 6rem;
         height: 2rem;
-        background-color: rgb(29, 28, 28);
-        border: 2px solid rgb(192, 191, 191);
+        
      }
 
-     .email-button button:hover,.slogan button:hover{
-         transform: scale(1.1);
-     }
 
 
      .footer-links{
          height: 10rem;
+         
      }
 
       
@@ -407,24 +499,5 @@
     .payment-logo img:hover{
         box-shadow: 3px 3px 3px rgb(61, 61, 61);
     }
-
-
-    
-.pr-logos{
-    width: 23rem;
-    height: 3rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    right: 70%;
-    top: 91%;
-}
-
-.pr-logos img{
-    width: 50px;
-}
-
-
  
 }

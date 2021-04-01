@@ -29,14 +29,9 @@
 
 .footer-columns-email p{
    color: white;
+   text-align: center;
 }
 
-.connect{
-    text-align: center;
-    line-height: 2;
-    color: white;
-    
-}
 
 
 .email-button input,.email-button button{
@@ -50,8 +45,17 @@
     
 }
 
+.email-button{
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+   
+}
+
 .email-button button{
-    background-color: black;
+    background-color: rgb(29, 28, 28);
+    border: 2px solid rgb(192, 191, 191);
     color: white;
     transition: 0.2s;
 }
@@ -64,6 +68,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 }
 
 
