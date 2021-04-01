@@ -1,33 +1,35 @@
 
+
+  const sidenavbar = document.querySelector('.side-navbar');
+  const menuimg  = document.querySelector('.menu-img');
+  const hamremover  = document.querySelector('#ham-remover');
+
+  const arrowup = document.querySelector('.arrow-up');
+  const arrowdown = document.querySelector('.arrow-down');
+  const imgslider = document.querySelectorAll('.image-slider-holder img')
+  const slidercontainer = document.querySelector('.image-slider-holder')
+  
+
+
 //onclick events
 
-function menu(){
-    const sidenavbar = document.querySelector('.side-navbar');
-    sidenavbar.classList.add('side-navbar-active'); 
-}
-
-function remove(){
-    const sidenavbar = document.querySelector('.side-navbar');
+   menuimg.addEventListener('click',()=>{
+      sidenavbar.classList.add('side-navbar-active'); 
+   });
+    
+    
+   hamremover.addEventListener('click',()=>{
     sidenavbar.classList.remove('side-navbar-active');
-}
+   });
 
 
-
-const hearts = document.querySelectorAll('.heart');
+const hearts = document.querySelectorAll('.heart');  //loop through heart image with evenlistner
 hearts.forEach(function(heart){
      heart.addEventListener('click',function(){
            heart.classList.toggle('img-active');
      });
 });
 
-
-
-
-const arrowup = document.querySelector('.arrow-up');
-const arrowdown = document.querySelector('.arrow-down');
-const imgslider = document.querySelectorAll('.image-slider-holder img')
-const slidercontainer = document.querySelector('.image-slider-holder')
-const firstclone = document.querySelector('.firstclone');
 
 let counter = 0;
 const size = imgslider[0].clientWidth;
