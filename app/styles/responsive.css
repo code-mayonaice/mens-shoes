@@ -1,6 +1,13 @@
 
 @media (min-width:600px){
   
+
+    .logo{
+        font-size: 0.6rem;
+        margin-left: 2.5rem;
+    }
+ 
+
     .menu-img{
       display: none;
   }   
@@ -38,17 +45,96 @@
       display: none;
   }
 
+
   .hero{
-      width: 100%;
-      height: 86vh;
-      top: 5rem;
-      border-radius: 0;
-      background-image:linear-gradient(to right, rgba(14, 13, 13, 0.884),rgb(48, 47, 47));
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      box-shadow: none;
-  }
+    width: 100%;
+    height: 60vh;
+    top: 5rem;
+    border-radius: 0;
+    background-image:linear-gradient(to right, rgba(14, 13, 13, 0.884),rgb(48, 47, 47));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: none;
+}
+
+
+.slogan{
+    height: 17rem;
+    transform: translate(4rem,2rem);
+   
+}
+
+
+.slogan h1{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    text-transform: capitalize;
+    line-height: 1.1;
+}
+
+.slogan button{
+    width: 8rem;
+    height: 2.5rem;
+    
+}
+
+.pr-logos{
+    width: 16rem;
+    height: 3.5rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 65%;
+    top: 88%;
+   
+}
+
+.pr-logos img{
+    width: 30px;
+    transition: 0.4s;
+}
+.pr-logos img:hover{
+    transform: scale(1.2);
+}
+
+
+.product-slider{
+    width: 18rem;
+    height: 15rem;
+    transform: translate(110%,-70%);
+   
+} 
+
+
+.image-slider-holder img{
+    width: 250px;
+    height: 230px;  
+}
+
+
+
+.image-slider-holder{
+    width: 100%;
+    height: 110rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.circle-bg{
+    background-color: rgba(12, 11, 11, 0.226);
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 5%;
+    top: 8%;
+}
 
 
 
@@ -62,16 +148,146 @@
   }
 
 
-
-
 }
+
+
+
+
+
 
 @media (min-width:1200px){
 
+    .hero{
+        width: 100%;
+        height: 86vh;
+        top: 5rem;
+        border-radius: 0;
+        background-image:linear-gradient(to right, rgba(14, 13, 13, 0.884),rgb(48, 47, 47));
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: none;
+    }
+
+    .slogan{
+     
+        width: 35%;
+        height: 24rem;
+        transform: translate(10rem,7rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+ 
+ 
+    .slogan h1{
+         color: rgb(255, 255, 255);
+         font-size: 5.5rem;
+         text-transform: capitalize;
+         line-height: 1.1;
+    }
+ 
+    .slogan button{
+          width: 8rem;
+          height: 2.5rem;
+          font-size: 1rem;
+          background-color: rgb(24, 23, 23);
+          border: 2px solid rgb(167, 166, 166);
+          color: white;
+          outline: none;
+          text-transform: capitalize;
+          font-weight: 600;
+          cursor: pointer;
+          transition: 0.3s;
+    }
+ 
+ 
+     .product-slider{
+         width: 35rem;
+         height: 32rem;
+         background-color: transparent;
+         position: absolute;
+         right: 50%;
+         top: 50%;
+         transform: translate(85%,-50%);
+         overflow: hidden;
+        
+     } 
+ 
+     .image-slider-holder img{
+         width: 510px;
+         height: 450px;
+         transition: 0.3s;
+         z-index: 10;
+         
+     }
+ 
+ 
+ 
+     .imagesliderholder-active{
+        transition: 0.5s transform ease-in;
+     }
+ 
+     .image-slider-holder{
+         width: 100%;
+         height: 225rem;
+         display: flex;
+         justify-content: space-around;
+         flex-direction: column;
+         align-items: center;
+        
+     }
+   
+ 
+      .circle-bg{
+         width: 28rem;
+         height: 28rem;
+         right: 16%;
+         top: 12%;
+     }
+ 
+     .slider-arrow{
+         height: 100%;
+         width: 100%;
+         position: absolute;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+         z-index: 5;
+         cursor: pointer;
+     }
+ 
+    
+     .arrow-up{
+        width: 100%;
+    }
+
+    .arrow-down{
+        display: none;
+        width: 100%;
+    }
+
+    .product-section{
+        height: 85rem;
+        margin: 8rem auto;
+        grid-row-gap: 3rem;
+        grid-column-gap: 20px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(14,18rem);
+        grid-template-areas: 'pr1 pr2 pr3 pr4'
+                             'pr5 pr6 pr7 pr8'
+                             'pr9 pr10 pr11 pr12'
+                             'pr13 pr14 pr15 pr16';
+                            
+    }          
+    
+
 
     .product-section .product:hover{
-        transform: scale(1.1);
+        transform: scale(1.03);
         z-index: 10;
+        box-shadow: 5px 6px 6px rgb(139, 138, 138);
   }
     
     .desktop-nav-content a{
@@ -87,6 +303,11 @@
         transform: scale(1.2);
     }
 
+    .buyme:hover,.cartbtn:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
     .desktop-nav{
         margin-right:2.3rem;
     }
@@ -100,19 +321,6 @@
     }
 
 
-     .product-section{
-        height: 85rem;
-        grid-row-gap: 3rem;
-        grid-column-gap: 7px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: repeat(14,18rem);
-        grid-template-areas: 'pr1 pr2 pr3 pr4'
-                             'pr5 pr6 pr7 pr8'
-                             'pr9 pr10 pr11 pr12'
-                             'pr13 pr14 pr15 pr16';
-                            
-    }          
-    
     .footer{
         height: 25rem;
         flex-direction: row;
@@ -177,7 +385,7 @@
         border: 2px solid rgb(192, 191, 191);
      }
 
-     .email-button button:hover{
+     .email-button button:hover,.slogan button:hover{
          transform: scale(1.1);
      }
 
@@ -201,6 +409,21 @@
     }
 
 
+    
+.pr-logos{
+    width: 23rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 70%;
+    top: 91%;
+}
+
+.pr-logos img{
+    width: 50px;
+}
 
 
  

@@ -1,99 +1,111 @@
 
-   .slogan{
-     
-       width: 45%;
-       height: 24rem;
-      transform: translate(8rem,7rem);
-       display: flex;
-       flex-direction: column;
-       justify-content: space-around;
-   }
+ 
+
+    .slogan{
+        width: 45%;
+        height: 10rem;
+        transform: translate(4rem,2rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
 
-   .slogan h1{
+    .slogan h1{
         color: rgb(255, 255, 255);
-        font-size: 5.5rem;
+        font-size: 2rem;
         text-transform: capitalize;
         line-height: 1.1;
    }
 
    .slogan button{
-         width: 8rem;
-         height: 2.5rem;
-         font-size: 1rem;
-         background-color: rgb(24, 23, 23);
-         border: 2px solid rgb(167, 166, 166);
-         color: white;
-         outline: none;
-         text-transform: capitalize;
-         font-weight: 600;
-         cursor: pointer;
-   }
+    width: 6rem;
+    height: 2rem;
+    font-size: 1rem;
+    background-color: rgb(24, 23, 23);
+    border: 2px solid rgb(167, 166, 166);
+    color: white;
+    outline: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
 
-    .product-slider{
-        width: 35rem;
-        height: 32rem;
-        background-color: transparent;
-        position: absolute;
-        right: 13%;
-        top: 15%;
-        overflow: hidden;
-    } 
+.pr-logos{
+    width: 3rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+}
 
-    .image-slider-holder img{
-        width: 510px;
-        height: 450px;
-        transition: 0.3s;
-        z-index: 10;
-        
-    }
+.pr-logos img{
+    width: 25px;
+}
+ 
+ 
+.product-slider{
+    width: 12rem;
+    height: 6rem;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,40%);
+    overflow: hidden;  
+} 
 
 
-
-    .imagesliderholder-active{
-       transition: 0.5s transform ease-in;
-    }
-
-    .image-slider-holder{
-        width: 100%;
-        height: 225rem;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-       
-    }
+.image-slider-holder img{
+    width: 100px;
+    height: 100px;
+    transition: 0.3s;
+    z-index: 10;
   
+}
 
-     .circle-bg{
-        background-color: rgba(12, 11, 11, 0.226);
-        width: 28rem;
-        height: 28rem;
-        border-radius: 50%;
-        position: absolute;
-        right: 16%;
-        top: 12%;
-    }
+.imagesliderholder-active{
+    transition: 0.5s transform ease-in;
+ }
 
-    .slider-arrow{
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 5;
-        cursor: pointer;
-    }
+
+.image-slider-holder{
+    width: 100%;
+    height: 44rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.slider-arrow{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    cursor: pointer;
+}
 
     .arrow-up{
         transform: rotate(-180deg);
+        width: 25px;
+        z-index: 10;
     }
 
     .arrow-down{
         display: none;
+        width: 25px;
+        z-index: 10;
     }
 
     

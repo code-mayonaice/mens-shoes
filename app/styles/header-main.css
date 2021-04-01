@@ -1,9 +1,14 @@
 
 .logo{
-    margin-left: 1.3rem;
-    font-size: 0.9rem;
-    cursor: pointer;
+    display: flex;
+    font-size: 0.4rem;
+    font-family: 'Public Sans', sans-serif;
+    margin-left: 2rem;
 }
+.logo img{
+    width: 25px;
+}
+
 
 .menu-img{
     margin-right: 1.3rem;

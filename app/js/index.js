@@ -29,7 +29,7 @@ const imgslider = document.querySelectorAll('.image-slider-holder img')
 const slidercontainer = document.querySelector('.image-slider-holder')
 const firstclone = document.querySelector('.firstclone');
 
-let counter = 1;
+let counter = 0;
 const size = imgslider[0].clientWidth;
 slidercontainer.style.transform = 'translateY(' + (- size * counter ) + 'px';
 
