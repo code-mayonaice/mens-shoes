@@ -1,18 +1,19 @@
 
+   
+    // declarations
 
   const sidenavbar = document.querySelector('.side-navbar');
   const menuimg  = document.querySelector('.menu-img');
   const hamremover  = document.querySelector('#ham-remover');
-
+  const cart = document.querySelector('.cart');
+  const cartordercontainer = document.querySelector('.cart-order-container');
   const arrowup = document.querySelector('.arrow-up');
   const arrowdown = document.querySelector('.arrow-down');
   const imgslider = document.querySelectorAll('.image-slider-holder img')
   const slidercontainer = document.querySelector('.image-slider-holder')
   
 
-
-//onclick events
-
+ //hidden navigation eventlistiner
    menuimg.addEventListener('click',()=>{
       sidenavbar.classList.add('side-navbar-active'); 
    });
@@ -23,7 +24,17 @@
    });
 
 
-const hearts = document.querySelectorAll('.heart');  //loop through heart image with evenlistner
+   //cart order container
+
+  cart.addEventListener('click',()=>{
+    cartordercontainer.classList.toggle('cart-active');
+    cart.style.transform="scale(1.2)";
+
+  });
+      
+
+
+const hearts = document.querySelectorAll('.heart');  //loop through heart image with eventlistner
 hearts.forEach(function(heart){
      heart.addEventListener('click',function(){
            heart.classList.toggle('img-active');
@@ -37,11 +48,11 @@ slidercontainer.style.transform = 'translateY(' + (- size * counter ) + 'px';
 
 
 
-   //arrow eventlisner
+   //arrow eventlistener
 
 arrowup.addEventListener('click',()=>{  
     counter++;
-    slidercontainer.style.transform = 'translateY(' + (- size * counter ) + 'px';
+    slidercontainer.style.transform = 'translateY(' + (- size * counter ) + 'px'; 
     slidercontainer.classList.add('imagesliderholder-active')
     arrowdown.style.display = "block";
     if(counter == 6){
@@ -62,4 +73,16 @@ arrowdown.addEventListener('click',()=>{
         arrowdown.style.display = "block";
       }
 });
+
+
+// add to card script
+
+
+const cartbtn = document.querySelectorAll('.cartbtn');
+
+ for(let i = 0; i < cartbtn.length; i++){
+    cartbtn[i].addEventListener('click',()=>{
+         collector();
+    });
+ }
 

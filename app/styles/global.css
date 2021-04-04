@@ -67,7 +67,7 @@ header{
     grid-row-gap: 3rem;
     grid-column-gap: 7px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(8,18rem);
+    grid-template-rows: repeat(8,20rem);
     grid-template-areas: 'pr1 pr2'
                          'pr3 pr4'
                          'pr5 pr6'

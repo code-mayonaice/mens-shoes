@@ -46,6 +46,10 @@
 .pr-logos img{
     width: 25px;
 }
+
+.circle-bg{
+    display: none;
+}
  
  
 .product-slider{

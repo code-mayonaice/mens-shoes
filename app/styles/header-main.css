@@ -36,6 +36,8 @@
     left: 0%;
 }
 
+
+
 .side-navbar-content{
     height: 80%;
     list-style: none;
@@ -76,4 +78,19 @@
     border-bottom-right-radius:25%;
     border-bottom-left-radius:25%;
     position: fixed;
+}
+
+
+.cart-order-container{
+    width: 40rem;
+    height: 25rem;
+    background-color: rgb(34, 34, 33);
+    position: fixed;
+    right: 0%;
+    top: -50%;
+    z-index: 6;
+}
+
+.cart-active{
+    top: 0%;
 }

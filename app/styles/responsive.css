@@ -32,7 +32,19 @@
       align-items: center;
       justify-content: space-around;
       list-style: none;
-     
+      position: relative;
+    
+  }
+
+  .cartnotify{
+      width: 20px;
+      height: 20px;
+      border-radius:50%;
+      position: absolute;
+      text-align: center;
+      right: 2%;
+      top: -20%;
+    
   }
    
   .desktop-nav-content a{
@@ -121,7 +133,7 @@
     width: 18rem;
     height: 15rem;
     transform: translate(110%,-70%);
-   
+  
 } 
 
 
@@ -139,17 +151,20 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+   
+    
 }
 
 
 .circle-bg{
     background-color: rgba(12, 11, 11, 0.226);
-    width: 18rem;
-    height: 18rem;
+    display: block;
+    width: 30rem;
+    height: 30rem;
     border-radius: 50%;
     position: absolute;
-    right: 5%;
-    top: 8%;
+    top: -10%;
+    right: -20%;
 }
 
 .slider-arrow img{
@@ -158,12 +173,11 @@
 
 
 .product-section{
-    height: 120rem;
     grid-row-gap: 3rem;
     grid-column-gap: 20px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(6,18rem);
-    grid-template-areas: 'pr1 pr2 pr3 '
+    grid-template-areas: 'pr1 pr2 pr3'
                          'pr4 pr5 pr6'
                          'pr7 pr8 pr9'
                          'pr10 pr11 pr12'
@@ -240,13 +254,8 @@
 } 
 
 .circle-bg{
-    background-color: rgba(12, 11, 11, 0.226);
-    width: 16rem;
-    height: 16rem;
-    border-radius: 50%;
-    position: absolute;
-    right: 8%;
-    top: 8%;
+    width: 30rem;
+    height: 30rem;
 }
 
 
@@ -348,10 +357,9 @@
    
  
       .circle-bg{
-         width: 28rem;
-         height: 28rem;
-         right: 16%;
-         top: 12%;
+        width: 40rem;
+        height: 40rem;
+         right: -10%;
      }
  
      .slider-arrow{
@@ -377,9 +385,11 @@
     }
 
     .product-section{
-        height: 100rem;
+        height: 85rem;
+        grid-row-gap: 2rem;
+        grid-column-gap: 7px;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(4,22rem);
+        grid-template-rows: repeat(4,20rem);
         grid-template-areas: 'pr1 pr2 pr3 pr4'
                              'pr5 pr6 pr7 pr8'
                              'pr9 pr10 pr11 pr12'
