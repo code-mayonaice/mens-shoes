@@ -11,6 +11,8 @@
   const arrowdown = document.querySelector('.arrow-down');
   const imgslider = document.querySelectorAll('.image-slider-holder img')
   const slidercontainer = document.querySelector('.image-slider-holder')
+  const cartbtn = document.querySelectorAll('.cartbtn');
+  const notify = document.querySelector('.cartnotify');
   
 
  //hidden navigation eventlistiner
@@ -28,7 +30,6 @@
 
   cart.addEventListener('click',()=>{
     cartordercontainer.classList.toggle('cart-active');
-    cart.style.transform="scale(1.2)";
 
   });
       
@@ -78,11 +79,187 @@ arrowdown.addEventListener('click',()=>{
 // add to card script
 
 
-const cartbtn = document.querySelectorAll('.cartbtn');
 
- for(let i = 0; i < cartbtn.length; i++){
-    cartbtn[i].addEventListener('click',()=>{
-         collector();
-    });
- }
 
+//product info
+
+let product = [
+
+  {
+    name: 'nike blazer GRT',
+    brand: 'nike',
+    price: 4500,
+    incart: 0
+  },
+
+
+  {
+   name: 'adidas superstar',
+   brand: 'adidas',
+   price: 5200,
+   incart: 0
+ },
+
+
+ {
+   name: 'adidas gaziel',
+   brand: 'adidas',
+   price: 3200,
+   incart: 0
+ },
+
+
+ {
+   name: 'adidas NMD',
+   brand: 'adidas',
+   price: 3500,
+   incart: 0
+ },
+
+
+ {
+  name: 'adidas zamba',
+  brand: 'adidas',
+  price: 2200,
+  incart: 0
+},
+
+
+{
+  name: 'Adidas Yeezy',
+  brand: 'adidas',
+  price: 3700,
+  incart: 0
+},
+
+
+{
+  name: 'nike dunk 121',
+  brand: 'adidas',
+  price: 4200,
+  incart: 0
+},
+
+
+
+
+
+ {
+   name: 'DC double-h',
+   brand: 'DC',
+   price: 5400,
+   incart: 0
+ },
+
+ {
+   name: 'DC double-h',
+   brand: 'DC',
+   price: 5400,
+   incart: 0
+ },
+
+ {
+   name: 'DC double-h',
+   brand: 'DC',
+   price: 5400,
+   incart: 0
+ },
+
+ {
+   name: 'DC double-h',
+   brand: 'DC',
+   price: 5400,
+   incart: 0
+ },
+
+ {
+   name: 'DC double-h',
+   brand: 'DC',
+   price: 5400,
+   incart: 0
+ },
+
+ {
+   name: 'DC double-h',
+   brand: 'DC',
+   price: 5400,
+   incart: 0
+ },
+
+ {
+   name: 'DC double-h',
+   brand: 'DC',
+   price: 5400,
+   incart: 0
+ },
+
+ {
+   name: 'DC double-h',
+   brand: 'DC',
+   price: 5400,
+   incart: 0
+ },
+
+ {
+  name: 'DC double-h',
+  brand: 'DC',
+  price: 5400,
+  incart: 0
+},
+
+
+];
+
+
+cartbtn.forEach(function(btn){
+  btn.addEventListener('click',()=>{
+    cartcounter(product);
+    
+  });
+});
+
+
+
+ 
+
+ 
+  function cartcounter(product){
+
+  
+    let productnumbers = localStorage.getItem('cartcounter');
+      productnumbers = parseInt(productnumbers);
+     
+       if(productnumbers){
+        localStorage.setItem('cartcounter',productnumbers + 1);
+        notify.textContent = productnumbers + 1;
+
+       }else{
+
+        localStorage.setItem('cartcounter',1);
+        notify.textContent = productnumbers = 1;
+
+       }
+
+    
+
+    
+  }
+
+
+ function onloadcartcounter(){
+  let productnumbers = localStorage.getItem('cartcounter');
+    if(productnumbers){
+     
+      notify.textContent = productnumbers;
+
+    }
+ };
+ 
+
+
+ 
+
+
+
+
+  onloadcartcounter();

@@ -80,6 +80,10 @@
     position: fixed;
 }
 
+.cartnotify{
+    color: rgb(253, 251, 251);
+    font-weight: 700;
+}
 
 .cart-order-container{
     width: 40rem;
@@ -94,3 +98,4 @@
 .cart-active{
     top: 0%;
 }
+
