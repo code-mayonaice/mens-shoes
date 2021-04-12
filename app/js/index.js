@@ -83,7 +83,7 @@ arrowdown.addEventListener('click',()=>{
 
 //product info
 
-let product = [
+let products = [
 
   {
     name: 'nike blazer GRT',
@@ -139,9 +139,6 @@ let product = [
   price: 4200,
   incart: 0
 },
-
-
-
 
 
  {
@@ -211,55 +208,102 @@ let product = [
 ];
 
 
-cartbtn.forEach(function(btn){
-  btn.addEventListener('click',()=>{
-    cartcounter(product);
+for(let i=0; i < cartbtn.length; i++){
+      cartbtn[i].addEventListener('click',()=>{
+         cartnumbers(products[i]);
+         totalcost(products[i]);
+      });
+}
+
+
+function onloadcarts(){
+  let productnumbers = localStorage.getItem('cartnumbers');
+
+  if(productnumbers){
+    document.querySelector('.cartnotify').textContent = productnumbers;
+  }
+}
+
+
+function cartnumbers(products){
+  
+  let productnumbers = localStorage.getItem('cartnumbers');
+  productnumbers = parseInt(productnumbers);
+
+   if(productnumbers){
+       localStorage.setItem('cartnumbers',productnumbers + 1);
+       document.querySelector('.cartnotify').textContent = productnumbers + 1;
+
+    }else{
+      localStorage.setItem('cartnumbers',1);
+      document.querySelector('.cartnotify').textContent = 1;
+    }
+   
+    setitems(products);
+
+}
+
+function setitems(products){
+  let cartitems = localStorage.getItem('productsincart');
+  cartitems = JSON.parse(cartitems);
     
-  });
-});
+   if(cartitems != null){
+   
+    if(cartitems[products.name] == undefined){
+          cartitems = {
+            ...cartitems,
+            [products.name]: products
+          }
+    }
 
+     cartitems[products.name].incart += 1;
 
+   }else{
 
- 
-
- 
-  function cartcounter(product){
+    products.incart = 1;
+    cartitems = {
+     [products.name]:products
+   }
+   }
 
   
-    let productnumbers = localStorage.getItem('cartcounter');
-      productnumbers = parseInt(productnumbers);
+
+  localStorage.setItem("productsincart",JSON.stringify(cartitems));
+}
+
+function totalcost(product){
+  // console.log('the total is ', product.price);
+  let cartcost = localStorage.getItem('totalcost');
+
+   if(cartcost != null){
+    cartcost = parseInt(cartcost);
+    localStorage.setItem('totalcost',cartcost + product.price) ;
+
+   }else{
+    localStorage.setItem('totalcost',product.price);
+
+   }
+}
+
+function displaycart(){
+  const productscontainer = document.querySelector('.products-holder')
+   let cartitems = localStorage.getItem('productsincart');
+   cartitems = JSON.parse(cartitems);
+  
+   
+   if(cartitems && cartordercontainer  ){
      
-       if(productnumbers){
-        localStorage.setItem('cartcounter',productnumbers + 1);
-        notify.textContent = productnumbers + 1;
+    cartordercontainer.innerHTML = '';
+        Object.values(cartitems).map(item => {
+          
+          
+        
 
-       }else{
-
-        localStorage.setItem('cartcounter',1);
-        notify.textContent = productnumbers = 1;
-
-       }
-
-    
-
-    
-  }
+             
+        });
+   }
+}
 
 
- function onloadcartcounter(){
-  let productnumbers = localStorage.getItem('cartcounter');
-    if(productnumbers){
-     
-      notify.textContent = productnumbers;
-
-    }
- };
- 
-
-
- 
-
-
-
-
-  onloadcartcounter();
+onloadcarts();
+displaycart()

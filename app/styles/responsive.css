@@ -156,16 +156,6 @@
 }
 
 
-.circle-bg{
-    background-color: rgba(12, 11, 11, 0.226);
-    display: block;
-    width: 30rem;
-    height: 30rem;
-    border-radius: 50%;
-    position: absolute;
-    top: -10%;
-    right: -20%;
-}
 
 .slider-arrow img{
     width: 40px;
@@ -356,12 +346,7 @@
      }
    
  
-      .circle-bg{
-        width: 40rem;
-        height: 40rem;
-         right: -10%;
-     }
- 
+
      .slider-arrow{
          height: 100%;
          width: 100%;

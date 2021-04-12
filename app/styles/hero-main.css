@@ -30,6 +30,11 @@
     transition: 0.3s;
 }
 
+.slogan button a{
+    color: white;
+    text-decoration: none;
+}
+
 
 .pr-logos{
     width: 3rem;

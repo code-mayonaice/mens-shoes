@@ -57,22 +57,12 @@
       justify-content: space-evenly;
   }
 
-  .butoons .buyme{
-      text-transform: capitalize;
-      width: 4.7rem;
-      color: white;
-      border-radius: 4px;
-      background-color: rgb(20, 20, 20);
-      border:none;  
-      outline:none;
-      transition: 0.4s;
-    }
 
   .cartbtn{
-      width: 4.7rem;
+      width: 5.5rem;
       background-color: rgb(20, 20, 20);
       border-radius: 4px;
-      padding: 5px 0px;
+      padding: 8px 2px;
       display: flex;
       align-items: center;
       justify-content: space-around;
